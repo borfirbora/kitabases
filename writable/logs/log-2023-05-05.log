@@ -1,0 +1,41 @@
+CRITICAL - 2023-05-05 08:02:46 --> Cannot modify header information - headers already sent by (output started at C:\wamp64\www\ci\app\Config\Events.php:32)
+in SYSTEMPATH\Debug\Toolbar.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent by (output started at C:\\wamp64\\www\\ci\\app\\Config\\Events.php:32)', 'SYSTEMPATH\\Debug\\Toolbar.php', 449)
+ 2 SYSTEMPATH\Debug\Toolbar.php(449): header('Content-Type: application/javascript')
+ 3 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 4 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:04:34 --> Undefined variable $site
+in APPPATH\Views\template\Head.php on line 8.
+ 1 APPPATH\Views\template\Head.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site', 'APPPATH\\Views\\template\\Head.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Head', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('template/Head', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:05:12 --> Undefined variable $site
+in APPPATH\Views\template\Head.php on line 8.
+ 1 APPPATH\Views\template\Head.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site', 'APPPATH\\Views\\template\\Head.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Head', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('template/Head', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:07:22 --> Undefined variable $site
+in APPPATH\Views\template\Head.php on line 8.
+ 1 APPPATH\Views\template\Head.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site', 'APPPATH\\Views\\template\\Head.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Head', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('template/Head', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,163 @@
+CRITICAL - 2023-05-06 12:39:14 --> date() expects at least 1 argument, 0 given
+in APPPATH\Views\template\Footer.php on line 73.
+ 1 APPPATH\Views\template\Footer.php(73): date()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:16:44 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:20:48 --> syntax error, unexpected identifier "Y", expecting ")"
+in APPPATH\Views\template\Footer.php on line 73.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template/Footer')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:22:24 --> syntax error, unexpected identifier "Y", expecting ")"
+in APPPATH\Views\template\Footer.php on line 73.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template/Footer')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 16:07:55 --> Cannot redeclare App\Controllers\Home::hakkimizda()
+in APPPATH\Controllers\Home.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-06 16:41:36 --> Invalid file: "iletisim.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('iletisim.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('iletisim', [], true)
+ 3 APPPATH\Controllers\Home.php(52): view('iletisim')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->iletisim()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 16:46:40 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Kitaplar.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Kitaplar')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 7 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 8 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 16:49:06 --> Class "App\Controllers\Kitaplar\BaseController" not found
+in APPPATH\Controllers\Kitaplar.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Kitaplar')
+ 6 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 7 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 8 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+10 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 16:55:41 --> Undefined variable $title
+in APPPATH\Views\template\Head.php on line 8.
+ 1 APPPATH\Views\template\Head.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\Head.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Head', [], true)
+ 5 APPPATH\Controllers\Kitaplar.php(9): view('template/Head')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kitaplar->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kitaplar))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 16:56:12 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Kitaplar.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Kitaplar')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 7 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 8 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 17:03:34 --> Class "App\Controllers\Kitaplar\BaseController" not found
+in APPPATH\Controllers\Kitaplar\Home.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar\\Home')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(224): ReflectionClass->__construct('\\App\\Controllers\\Kitaplar\\Home')
+ 6 SYSTEMPATH\Router\AutoRouterImproved.php(175): CodeIgniter\Router\AutoRouterImproved->checkRemap()
+ 7 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 8 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+10 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 17:12:41 --> Class "App\Controllers\Kitaplar\BaseController" not found
+in APPPATH\Controllers\Kitaplar\Home.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar\\Home')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(224): ReflectionClass->__construct('\\App\\Controllers\\Kitaplar\\Home')
+ 6 SYSTEMPATH\Router\AutoRouterImproved.php(175): CodeIgniter\Router\AutoRouterImproved->checkRemap()
+ 7 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 8 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+10 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 18:59:56 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Kitaplar\Home.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kitaplar\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kitaplar\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kitaplar\\Home')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(224): ReflectionClass->__construct('\\App\\Controllers\\Kitaplar\\Home')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(175): CodeIgniter\Router\AutoRouterImproved->checkRemap()
+ 6 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouterImproved->getRoute('kitaplar')
+ 7 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('kitaplar')
+ 8 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('kitaplar')
+ 9 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 19:15:23 --> Too few arguments to function App\Controllers\Kitaplar\Home::getIndex(), 0 passed in C:\wamp64\www\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Kitaplar\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kitaplar\Home->getIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kitaplar\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 19:22:33 --> Too few arguments to function App\Controllers\Kitaplar\Home::getIndex(), 0 passed in C:\wamp64\www\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Kitaplar\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kitaplar\Home->getIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kitaplar\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 19:26:10 --> Too few arguments to function App\Controllers\Kitaplar\Home::getIndex(), 0 passed in C:\wamp64\www\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Kitaplar\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kitaplar\Home->getIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kitaplar\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 19:27:21 --> Too few arguments to function App\Controllers\Kitaplar\Home::getIndex(), 0 passed in C:\wamp64\www\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Kitaplar\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kitaplar\Home->getIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kitaplar\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

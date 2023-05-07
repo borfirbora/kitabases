@@ -1,0 +1,73 @@
+CRITICAL - 2023-04-06 17:25:46 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 17:27:18 --> syntax error, unexpected token "{", expecting "function" or "const"
+in APPPATH\Controllers\DatabaseConnection.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\DatabaseConnection.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DatabaseConnection')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DatabaseConnection')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\DatabaseConnection', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-06 17:39:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\wamp64\www\ci\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\ci\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '182736451', 'kitabases', 3306, '', 0)
+#1 C:\wamp64\www\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\ci\app\Controllers\DatabaseConnection.php(10): CodeIgniter\Database\BaseConnection->query('SELECT 2 * 2 AS...')
+#4 C:\wamp64\www\ci\system\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+#5 C:\wamp64\www\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+#6 C:\wamp64\www\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\wamp64\www\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\ci\app\Controllers\DatabaseConnection.php(10): CodeIgniter\Database\BaseConnection->query('SELECT 2 * 2 AS...')
+#3 C:\wamp64\www\ci\system\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+#4 C:\wamp64\www\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+#5 C:\wamp64\www\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-06 17:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DatabaseConnection.php(10): CodeIgniter\Database\BaseConnection->query('SELECT 2 * 2 AS s;')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 17:44:03 --> Attempt to read property "carp" on array
+in APPPATH\Controllers\DatabaseConnection.php on line 11.
+ 1 APPPATH\Controllers\DatabaseConnection.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "carp" on array', 'APPPATH\\Controllers\\DatabaseConnection.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 17:45:04 --> Undefined array key "carp"
+in APPPATH\Controllers\DatabaseConnection.php on line 11.
+ 1 APPPATH\Controllers\DatabaseConnection.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "carp"', 'APPPATH\\Controllers\\DatabaseConnection.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 17:47:59 --> Undefined variable $a
+in APPPATH\Controllers\DatabaseConnection.php on line 13.
+ 1 APPPATH\Controllers\DatabaseConnection.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'APPPATH\\Controllers\\DatabaseConnection.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 17:48:20 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\DatabaseConnection.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DatabaseConnection->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DatabaseConnection))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
