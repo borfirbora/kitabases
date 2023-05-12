@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <form id="qrForm">
+      <label for="cht">QR Kod Tipi:</label>
+      <select name="cht" id="cht">
+        <option value="qr" selected>QR Kod</option>
+        <option value="barcode">Barkod</option>
+        <option value="pie">Pie Chart</option>
+      </select>
+      <br><br>
+      <label for="chs">Boyut:</label>
+      <input type="text" name="chs" id="chs" value="500x500">
+      <br><br>
+      <label for="chl">Metin:</label>
+      <input type="text" name="chl" id="chl">
+      <br><br>
+      <button type="submit">QR Kodu Oluştur</button>
+    </form>
+    <div id="qrCode"></div>
+    <script>
+      const form = document.getElementById("qrForm");
+      const div = document.getElementById("qrCode");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Formun varsayılan davranışını engelle
+        const url = "https://chart.googleapis.com/chart?" + new URLSearchParams(new FormData(form)).toString();
+        const img = document.createElement("img");
+        img.src = url;
+        div.appendChild(img);
+      });
+    </script>
+  </body>
+</html>

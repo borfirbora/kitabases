@@ -13,4 +13,9 @@ class Kitaplar extends BaseController
     {
         return $no . " numaralı kitap silindi.";
     }
+
+    public function getEkle($ad,$yazar, $yil)
+    {
+        return $yazar . " yazarına ait " . $ad . " isimli kitap eklendi. Kitabın yılı: " . $yil;
+    }
 }
