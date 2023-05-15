@@ -9,10 +9,7 @@
                     <h5 class="text-uppercase">Proje Hakkında</h5>
 
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Iste atque ea quis molestias. Fugiat pariatur maxime quis
-                      culpa corporis vitae repudiandae aliquam voluptatem
-                      veniam, est atque cumque eum delectus sint!
+                      <?= $d["hakkımızda"]; ?>
                     </p>
                   </div>
                   <!--Grid column-->
@@ -73,7 +70,7 @@
               >
                 © <?= date('Y'); ?> kopya hakkı:
                 <a class="text-white" href="<?= base_url(); ?>">
-                  <?= SITE_NAME; ?></a> Projenin tüm hakları geliştiricilerine aittir.
+                  <?= SITE_NAME; ?></a> <?= $d["copyright"]; ?>
               </div>
               <!-- Copyright -->
             </footer>

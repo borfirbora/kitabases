@@ -2,7 +2,7 @@
 
 namespace App\Model;
 
-use codeigniter\Model;
+use CodeIgniter\Model;
 
 class DetailsModel extends Model
 {
@@ -12,7 +12,6 @@ class DetailsModel extends Model
     protected $returnType = 'array';
     protected $useSoftDeletes = false;
     protected $allowedFields = [
-        'id',
         'label',
         'description',
     ];
@@ -25,4 +24,13 @@ class DetailsModel extends Model
     protected $validationMessages = [];
     protected $skipValidation = false;
 
+    public function headerFooter()
+    {
+$data = [
+    "hakkımızda" => $this->where("label","hakkımızda")->findColumn("description")[0],
+    "iletişim" => $this->where("label","iletişim")->findColumn("description")[0],
+    "kvkk" => $this->where("label","kvkk")->findColumn("description")[0],
+    "copyright" => $this->where("label","copyright")->findColumn("description")[0],
+];return $data;
+    }
 }

@@ -1,0 +1,185 @@
+CRITICAL - 2023-05-15 18:50:27 --> Class "codeigniter\Model" not found
+in APPPATH\Models\DetailsModel.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\DetailsModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\DetailsModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\DetailsModel')
+ 5 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\DetailsModel')
+ 6 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'DetailsModel')
+ 7 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models('DetailsModel', [...], null)
+ 9 APPPATH\Controllers\Home.php(9): model('DetailsModel')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 18:51:47 --> Call to undefined method App\Model\DetailsModel::firt
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Home.php(12): CodeIgniter\Model->__call('firt', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 18:52:11 --> Array to string conversion
+in APPPATH\Views\template\Head.php on line 8.
+ 1 APPPATH\Views\template\Head.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\template\\Head.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Head', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('template/Head', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:02:17 --> Undefined variable $row
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:02:43 --> Undefined array key "site başlığı"
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "site başlığı"', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:10:46 --> Array to string conversion
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:16:28 --> Undefined variable $rows
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rows', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(19): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:31:13 --> Undefined variable $hakkimizda
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hakkimizda', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->hakkimizda()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:33:49 --> Object of class App\Controllers\Home could not be converted to string
+in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:42:48 --> Call to a member function where() on null
+in APPPATH\Controllers\Home.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->hakkimizda()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:45:32 --> Call to undefined method App\Controllers\Home::bilgiler()
+in APPPATH\Controllers\Home.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->hakkimizda()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:47:02 --> Call to a member function where() on null
+in APPPATH\Controllers\Home.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->hakkimizda()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 19:49:52 --> Constant expression contains invalid operations
+in APPPATH\Controllers\Home.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 20:10:31 --> Undefined variable $hakkimizda
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hakkimizda', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:11:26 --> Undefined variable $copyright
+in APPPATH\Views\template\Footer.php on line 73.
+ 1 APPPATH\Views\template\Footer.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $copyright', 'APPPATH\\Views\\template\\Footer.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:22:00 --> Undefined variable $d
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->uyeliksozlesmesi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:24:03 --> Undefined array key "üyelik sözleşmesi"
+in APPPATH\Controllers\Home.php on line 58.
+ 1 APPPATH\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "üyelik sözleşmesi"', 'APPPATH\\Controllers\\Home.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->uyeliksozlesmesi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:25:43 --> Object of class App\Model\DetailsModel could not be converted to string
+in APPPATH\Controllers\Home.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->uyeliksozlesmesi()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:26:36 --> Object of class App\Model\DetailsModel could not be converted to string
+in APPPATH\Controllers\Home.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->uyeliksozlesmesi()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:27:35 --> Undefined variable $d
+in APPPATH\Views\template\Footer.php on line 12.
+ 1 APPPATH\Views\template\Footer.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'APPPATH\\Views\\template\\Footer.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/Footer', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('template/Footer')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->iletisim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 20:29:30 --> Undefined array key "iletişim"
+in APPPATH\Controllers\Home.php on line 74.
+ 1 APPPATH\Controllers\Home.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iletişim"', 'APPPATH\\Controllers\\Home.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->iletisim()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
